@@ -10,7 +10,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <section>
-      <h2 className='text-3xl'></h2>Quotara
+      <h2 className='text-3xl text-main logo'>Quotara</h2>
     </section>
   )
 }
