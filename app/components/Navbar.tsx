@@ -67,6 +67,18 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
+
+        <div className='md:hidden flex items-center gap-4'>
+          <button 
+            className='text-white text-xl'
+            title='Menu'
+          >
+            {menuOpen 
+              ? <LiaTimesSolid />
+              : <LiaBarsSolid /> 
+            }
+          </button>
+        </div>
       </div>
     </nav>
   )
