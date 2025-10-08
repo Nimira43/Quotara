@@ -6,16 +6,16 @@ import { LiaTimesSolid, LiaBarsSolid } from 'react-icons/lia'
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const base = 'nav-link transitioning'
-  const active = 'text-orange-500 font-semibold'
+  const active = 'text-orange-400 font-semibold'
 
   return ( 
-    <nav className='bg-teal-800 shadow-md sticky top-0 z-50'>
+    <nav className='bg-teal-700 shadow-md sticky top-0 z-50'>
       <div className='max-w-6xl mx-auto px-6 py-4 flex justify-between items-center'>
         <NavLink
           to='/'
           className='flex items-center gap-2 text-white text-3xl'
         >
-          <BsChatSquareQuote />
+          <BsChatSquareQuote className='text-orange-400' />
           <span className='logo pb-1'>Quotara</span>
         </NavLink>
         <div className='hidden md:flex items-center gap-6'>
@@ -71,7 +71,7 @@ const Navbar = () => {
         <div className='md:hidden flex items-center gap-4'>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className='text-white text-xl cursor-pointer'
+            className='text-orange-400 text-xl cursor-pointer'
             title='Menu'
           >
             {menuOpen 
@@ -83,7 +83,7 @@ const Navbar = () => {
       </div>
       {
         menuOpen && (
-          <div className='md:hidden bg-teal-100 px-6 py-4 space-y-2 space-x-4 text-center font-medium uppercase'>
+          <div className='md:hidden bg-teal-700 text-white border-t border-orange-400 px-6 py-4 space-y-2 space-x-4 text-center font-medium uppercase'>
             <NavLink 
               className={({ isActive }) => isActive
                 ? active

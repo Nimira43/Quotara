@@ -16,7 +16,7 @@
 }
 
 .nav-link {
-  @apply hover:text-orange-500; 
+  @apply hover:text-orange-400; 
 }
 
 
