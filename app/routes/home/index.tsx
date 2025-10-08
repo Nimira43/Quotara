@@ -9,8 +9,8 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <>
-      Quotara
-    </>
+    <section>
+      <h2 className='text-3xl'></h2>Quotara
+    </section>
   )
 }
