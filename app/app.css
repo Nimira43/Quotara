@@ -11,4 +11,13 @@
   font-family: 'Protest Revolution', sans-serif;
 }
 
+.hover-transition {
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-link {
+  @apply hover:text-orange-500; 
+}
+
+
 

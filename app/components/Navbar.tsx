@@ -12,29 +12,34 @@ const Navbar = () => {
           <BsChatSquareQuote className='text-3xl text-white' />
           <span className='text-3xl text-white logo pb-1'>Quotara</span>
         </NavLink>
-        <div className='flex items-center gap-6'>
-          <div className='space-x-4text-sm text-white'>
+        <div className='hidden md:flex items-center gap-6'>
+          <div className='space-x-4 text-sm text-white uppercase font-medium'>
             <NavLink 
+              className='nav-link hover-transition'
               to='/'
             >
               Home
             </NavLink>
             <NavLink 
+              className='nav-link hover-transition'
               to='/services'
             >
               Services
             </NavLink>
             <NavLink 
+              className='nav-link hover-transition'
               to='/blog'
             >
               Blog
             </NavLink>
             <NavLink 
+              className='nav-link hover-transition'
               to='/about'
             >
               About
             </NavLink>
             <NavLink 
+              className='nav-link hover-transition'
               to='/contact'
             >
               Contact
