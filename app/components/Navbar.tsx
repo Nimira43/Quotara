@@ -4,6 +4,7 @@ import { BsChatSquareQuote } from 'react-icons/bs'
 import { LiaTimesSolid, LiaBarsSolid } from 'react-icons/lia'
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
   const base = 'nav-link hover-transition'
   const active = 'text-orange-500 font-semibold'
 
