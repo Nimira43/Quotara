@@ -7,37 +7,8 @@
   font-weight: 300;
 }
 
-:root {
-  --main: #008080;
-  --main-light: #89f4f4;
-  --main-dark: #014949;
-  --support: #ff4500;
-  --dark: #111;
-  --light: #fffdfa;
-  --grey-dark: #333;
-  --grey-medium: #888;
-  --grey-light: #ccc;
-  --grey-light-extra: #eee;
-}
-
 .logo {
   font-family: 'Protest Revolution', sans-serif;
 }
 
-.text-main { color: var(--main); }
-.text-support { color: var(--support); }
-.text-dark { color: var(--dark); }
-.text-light { color: var(--light); }
-.text-grey-dark { color: var(--grey-dark); }
-.text-grey-medium { color: var(--grey-medium); }
-.text-grey-light { color: var(--grey-light); }
-.text-grey-light-extra { color: var(--grey-light-extra); }
-.bg-main { background-color: var(--main); }
-.bg-support { background-color: var(--support); }
-.bg-dark { background-color: var(--dark); }
-.bg-light { background-color: var(--light); }
-.bg-grey-dark { background-color: var(--grey-dark); }
-.bg-grey-medium { background-color: var(--grey-medium); }
-.bg-grey-light { background-color: var(--grey-light); }
-.bg-grey-light-extra { background-color: var(--grey-light-extra); }
 
