@@ -8,7 +8,14 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  console.log('Hello from Home')
+  const now = new Date().toISOString()
+  
+  if (typeof window === 'undefined') {
+    console.log('Server render at: ', now)
+  } else {
+    console.log('Client hydration at: ', now)
+  }
+  
   return (
     <section>
       <h2 className='text-3xl text-main logo'>Quotara</h2>
