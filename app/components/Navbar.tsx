@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import { NavLink } from 'react-router'
-import { BsChatSquareQuote } from "react-icons/bs";
+import { BsChatSquareQuote } from 'react-icons/bs'
+import { LiaTimesSolid, LiaBarsSolid } from 'react-icons/lia'
 
 const Navbar = () => {
   const base = 'nav-link hover-transition'
