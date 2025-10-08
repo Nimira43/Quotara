@@ -2,9 +2,9 @@ import type { Route } from './+types/index'
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Quotara' },
-    { name: 'description', content: 'Website using React Router, Tailwind and TypeScript.' },
-  ];
+    { title: 'Quotara | Home' },
+    { name: 'description', content: 'Welcome to Quotara.' },
+  ]
 }
 
 export default function Home() {

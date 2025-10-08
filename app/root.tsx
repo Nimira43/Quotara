@@ -22,6 +22,14 @@ export const links: Route.LinksFunction = () => [
     href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap',
   },
 ]
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: 'Quotara' },
+    { name: 'description', content: 'Website using React Router, Tailwind and TypeScript.' },
+  ]
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
