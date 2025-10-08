@@ -5,7 +5,7 @@ import { LiaTimesSolid, LiaBarsSolid } from 'react-icons/lia'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
-  const base = 'nav-link hover-transition'
+  const base = 'nav-link transitioning'
   const active = 'text-orange-500 font-semibold'
 
   return ( 
@@ -81,6 +81,62 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      {
+        menuOpen && (
+          <div className='md:hidden bg-teal-100 px-6 py-4 space-y-2 space-x-4 text-center font-medium uppercase'>
+            <NavLink 
+              className={({ isActive }) => isActive
+                ? active
+                : base
+              }
+              to='/'
+              onClick={() => setMenuOpen(false)}
+            >
+              Home
+            </NavLink>
+            <NavLink 
+              className={({ isActive }) => isActive
+                ? active
+                : base
+              }
+              to='/services'
+              onClick={() => setMenuOpen(false)}
+            >
+              Services
+            </NavLink>
+            <NavLink 
+              className={({ isActive }) => isActive
+                ? active
+                : base
+              }
+              to='/blog'
+              onClick={() => setMenuOpen(false)}
+            >
+              Blog
+            </NavLink>
+            <NavLink 
+              className={({ isActive }) => isActive
+                ? active
+                : base
+              }
+              to='/about'
+              onClick={() => setMenuOpen(false)}
+            >
+              About
+            </NavLink>
+            <NavLink 
+              className={({ isActive }) => isActive
+                ? active
+                : base
+              }
+              to='/contact'
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact
+            </NavLink>
+          </div>
+        )
+      }
     </nav>
   )
 }
