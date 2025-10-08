@@ -20,12 +20,12 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink 
-              to='/'
+              to='/services'
             >
-              Projects
+              Services
             </NavLink>
             <NavLink 
-              to='/projects'
+              to='/blog'
             >
               Blog
             </NavLink>
