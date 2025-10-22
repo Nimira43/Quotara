@@ -10,9 +10,15 @@ const Hero = () => {
       <div className='flex.justify-center gap-4'>
         <Link 
           to='/services'
-          className='uppercase bg-orange-400 text-white px-6 py-2 rounded hover:bg-teal-700 transitioning'  
+          className='orange-btn transitioning'  
         >
           View Services
+        </Link>
+        <Link 
+          to='/contact'
+          className=' outline-btn transitioning'  
+        >
+          Contact Us
         </Link>
       </div>
     </header>
