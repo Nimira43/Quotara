@@ -1,7 +1,11 @@
+import { Outlet } from 'react-router'
+
 const HomeLayout = () => {
   return ( 
     <>
-      Home Layout
+      <section>
+        <Outlet />
+      </section>
     </>
    )
 }
