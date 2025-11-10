@@ -83,7 +83,7 @@ const Navbar = () => {
       </div>
       {
         menuOpen && (
-          <div className='md:hidden bg-teal-700 text-white border-t border-orange-400 px-6 py-4 space-y-2 space-x-4 text-center font-medium uppercase'>
+          <div className='menu-open transitioning'>
             <NavLink 
               className={({ isActive }) => isActive
                 ? active
