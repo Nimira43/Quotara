@@ -71,7 +71,7 @@ const Navbar = () => {
         <div className='md:hidden flex items-center gap-4'>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className='text-orange-400 text-xl cursor-pointer'
+            className='text-white text-xl cursor-pointer'
             title='Menu'
           >
             {menuOpen 
