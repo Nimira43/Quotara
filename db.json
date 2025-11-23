@@ -2,7 +2,7 @@
 "projects": [
   {
     "id": 1,
-    "title": "DevDash",
+    "title": "Tabularium",
     "description": "A productivity dashboard for developers to track tasks, goals, and inspiration.",
     "image": "/images/project-1.png",
     "url": "https://example.com",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "title": "SnapFeed",
+    "title": "Virtuoso",
     "description": "A photo-sharing app with uploads, a feed, and social features.",
     "image": "/images/project-2.png",
     "url": "https://example.com",
@@ -22,7 +22,7 @@
   },
   {
     "id": 3,
-    "title": "NoteNest",
+    "title": "Sciptura",
     "description": "A note-taking app with categories and local storage support.",
     "image": "/images/project-3.png",
     "url": "https://example.com",
@@ -32,7 +32,7 @@
   },
   {
     "id": 4,
-    "title": "FitTrack",
+    "title": "Modulas",
     "description": "A fitness tracker that logs workouts and progress visually.",
     "image": "/images/project-4.png",
     "url": "https://example.com",
@@ -42,7 +42,7 @@
   },
   {
     "id": 5,
-    "title": "CodeCritic",
+    "title": "Code-Docs",
     "description": "A code snippet review tool with comments and upvotes.",
     "image": "/images/project-5.png",
     "url": "https://example.com",
@@ -52,8 +52,8 @@
   },
   {
     "id": 6,
-    "title": "InspoQuote",
-    "description": "A daily inspiration quote generator with save/share options.",
+    "title": "Abacus",
+    "description": "A fully featured expense tracker application.",
     "image": "/images/project-6.png",
     "url": "https://example.com",
     "date": "2024-09-28",
