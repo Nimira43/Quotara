@@ -9,10 +9,10 @@ const Hero = () => {
       <p className='text-lg text-gray-700 max-w-2xl mx-auto mb-6'>Quotara empowers independent developers to showcase, sell, and thrive—turning coding products into opportunities, connecting creators with buyers, and transforming innovation into income.</p>
       <div className='flex justify-center gap-4'>
         <Link 
-          to='/services'
+          to='/projects'
           className='orange-btn transitioning'  
         >
-          View Services
+          View Projects
         </Link>
         <Link 
           to='/contact'
