@@ -1,5 +1,7 @@
 import type { Route } from './+types/index'
 
+export async function loader() {}
+
 const ProjectsPage = () => {
   return ( 
     <>
