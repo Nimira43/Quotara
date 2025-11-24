@@ -10,11 +10,10 @@ export async function loader({ request }: Route.LoaderArgs): Promise<{projects: 
 
 const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
   const { projects } = loaderData as { projects: Project[] }
-  console.log(projects)
 
   return ( 
     <>
-      <h2 className='text-3xl font-medium text-gray-900 mb-2'>Projects</h2>
+      <h2 className='page-title'>Projects</h2>
     </>
   )
 }

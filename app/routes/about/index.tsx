@@ -1,7 +1,7 @@
 const AboutPage = () => {
   return ( 
     <>
-      <h2 className='text-3xl font-medium text-gray-900 mb-2'>
+      <h2 className='page-title'>
         About Us
       </h2>
     </>

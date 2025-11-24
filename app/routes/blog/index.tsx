@@ -1,7 +1,7 @@
 const BlogPage = () => {
   return ( 
     <>
-      <h2 className='text-3xl font-medium text-gray-900 mb-2'>
+      <h2 className='page-title'>
         Blog
       </h2>
     </>
