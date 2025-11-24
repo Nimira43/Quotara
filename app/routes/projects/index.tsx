@@ -30,6 +30,10 @@ const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
               <p className='text-sm text-gray-900 mb-2'>
                 {project.description}
               </p>
+              <div className='flex justify-between items-center text-sm text-orange-400 font-semibold uppercase'>
+                <span>{project.category}</span>
+                <span>{new Date(project.date).toLocaleDateString()}</span>
+              </div>
             </div>
           </div>
         ))}
