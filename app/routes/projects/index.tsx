@@ -1,3 +1,5 @@
+import type { Route } from './+types/index'
+
 const ProjectsPage = () => {
   return ( 
     <>
