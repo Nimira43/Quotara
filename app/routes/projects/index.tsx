@@ -14,6 +14,19 @@ const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
   return ( 
     <>
       <h2 className='page-title'>Projects</h2>
+      <div className='grid gap-6 sm:grid-cols-2'>
+        {projects.map((project) => (
+          <div 
+            key={project.id}
+            className='bg-teal-50 border border-orange-400 rounded-md overflow-hidden shadow-sm transitioning hover:shadow-md'
+          >
+            <img 
+              src={project.image} 
+              alt={project.title} 
+            />
+          </div>
+        ))}
+      </div>
     </>
   )
 }
