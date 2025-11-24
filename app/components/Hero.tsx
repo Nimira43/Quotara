@@ -6,7 +6,7 @@ const Hero = () => {
       <h2 className='text-4xl text-gray-800 font-medium mb-4'> 
         Welcome to Quotara
       </h2>
-      <p className='text-lg text-gray-700 max-w-2xl mx-auto mb-6'>Compare insurance, energy, and broadband deals in seconds. Save money, dodge confusion, and let Quotara simplify your switching ritual.</p>
+      <p className='text-lg text-gray-700 max-w-2xl mx-auto mb-6'>Quotara empowers independent developers to showcase, sell, and thrive—turning coding products into opportunities, connecting creators with buyers, and transforming innovation into income.</p>
       <div className='flex justify-center gap-4'>
         <Link 
           to='/services'

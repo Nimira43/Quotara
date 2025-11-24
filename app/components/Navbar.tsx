@@ -34,9 +34,9 @@ const Navbar = () => {
                 ? active
                 : base
               }
-              to='/services'
+              to='/projects'
             >
-              Services
+              Projects
             </NavLink>
             <NavLink 
               className={({ isActive }) => isActive
@@ -99,10 +99,10 @@ const Navbar = () => {
                 ? active
                 : base
               }
-              to='/services'
+              to='/projects'
               onClick={() => setMenuOpen(false)}
             >
-              Services
+              Projects
             </NavLink>
             <NavLink 
               className={({ isActive }) => isActive
