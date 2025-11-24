@@ -9,7 +9,7 @@ export async function loader({ request }: Route.LoaderArgs): Promise<{projects: 
 }
 
 const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
-  const { projects } = loaderData
+  const { projects } = loaderData as { projects: Project[] }
   console.log(projects)
 
   return ( 
