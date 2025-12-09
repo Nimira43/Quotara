@@ -1,6 +1,9 @@
+import type { Route } from './+types'
+
 const ProjectDetailsPage = () => {
   return ( 
-    <>Project Details</>
+    <>
+    </>
   )
 }
  
