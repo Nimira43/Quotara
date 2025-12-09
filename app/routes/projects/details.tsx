@@ -4,7 +4,7 @@ import type { Project } from '~/types'
 export async function clientLoader(
   { request, params }: Route.ClientLoaderArgs
 ): Promise<Project> {
-  const res = await fetch(`http://localhost:8000/project/${params.id}`)
+  const res = await fetch(`http://localhost:8000/projects/${params.id}`)
 
   if (!res.ok) throw new Response('Project not found', { status: 404 })
   
@@ -26,7 +26,7 @@ const ProjectDetailsPage = (
   
   return ( 
     <>
-      
+      Project Details
     </>
   )
 }
