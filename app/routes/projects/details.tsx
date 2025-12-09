@@ -7,7 +7,9 @@ export async function ClientLoader({
 }): Promise<Project> {
   const res = await fetch(`http://localhost:8000/project/${params.id}`)
 
-  if (!res.ok) throw new Response('Project not found', {status: 404})
+  if (!res.ok) throw new Response('Project not found', { status: 404 })
+  
+  const project: Project = await res.json()
 }
 
 const ProjectDetailsPage = () => {
