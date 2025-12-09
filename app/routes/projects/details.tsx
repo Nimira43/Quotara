@@ -5,7 +5,7 @@ export async function ClientLoader({
   request,
   params
 }): Promise<Project> {
-  
+  const res = await fetch(`http://localhost:8000/project/${params.id}`)
 }
 
 const ProjectDetailsPage = () => {
