@@ -13,6 +13,12 @@ export async function clientLoader({
   return project
 }
 
+export function HydrationFallback() {
+  return (
+    <div>Loading...</div>
+  )
+}
+
 const ProjectDetailsPage = () => {
   return ( 
     <>
