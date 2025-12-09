@@ -27,7 +27,13 @@ const ProjectDetailsPage = (
   
   return ( 
     <>
-      Project Details
+      <Link
+        to='/projects'
+        className='flex items-center text-gray-900 hover:text-orange-400 mb-6 transitioning'
+      >
+        <IoIosArrowRoundBack className='mr-2' />
+        Back to Projects
+      </Link>      
     </>
   )
 }
