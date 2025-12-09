@@ -1,4 +1,4 @@
-import type { Route } from './+types'
+import type { Route } from './+types/details'
 import type { Project } from '~/types'
 import { IoIosArrowRoundBack } from 'react-icons/io'
 import { Link } from 'react-router'
@@ -34,7 +34,12 @@ const ProjectDetailsPage = (
         <IoIosArrowRoundBack className='mr-2' />
         Back to Projects
       </Link>
-      
+      <div className='grid gap-8 md:grid-cols-2 '>
+        <img
+          src={project.image}
+          alt={project.title}
+        />
+      </div>
     </>
   )
 }
