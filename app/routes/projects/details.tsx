@@ -33,7 +33,8 @@ const ProjectDetailsPage = (
       >
         <IoIosArrowRoundBack className='mr-2' />
         Back to Projects
-      </Link>      
+      </Link>
+      
     </>
   )
 }
