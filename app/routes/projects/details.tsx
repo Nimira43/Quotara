@@ -1,7 +1,7 @@
-const ProjecttDetailsPage = () => {
+const ProjectDetailsPage = () => {
   return ( 
     <>Project Details</>
   )
 }
  
-export default ProjecttDetailsPage
+export default ProjectDetailsPage
