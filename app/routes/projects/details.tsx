@@ -1,5 +1,6 @@
 import type { Route } from './+types'
 import type { Project } from '~/types'
+import { IoIosArrowRoundBack } from 'react-icons/io'
 
 export async function clientLoader(
   { request, params }: Route.ClientLoaderArgs
@@ -22,7 +23,6 @@ const ProjectDetailsPage = (
   { loaderData }: Route.ComponentProps
 ) => {
   const project = loaderData
-  console.log(project)
   
   return ( 
     <>
