@@ -1,7 +1,7 @@
 import type { Route } from './+types'
 import type { Project } from '~/types'
 
-export async function ClientLoader({
+export async function clientLoader({
   request,
   params
 }): Promise<Project> {
@@ -10,11 +10,13 @@ export async function ClientLoader({
   if (!res.ok) throw new Response('Project not found', { status: 404 })
   
   const project: Project = await res.json()
+  return project
 }
 
 const ProjectDetailsPage = () => {
   return ( 
     <>
+      
     </>
   )
 }
