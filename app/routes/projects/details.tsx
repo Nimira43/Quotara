@@ -39,15 +39,18 @@ const ProjectDetailsPage = (
           <img
             src={project.image}
             alt={project.title}
-            className='w-full rounded-md shadow-md'
+            className='w-full rounded-md shadow-md border border-orange-400'
           />
         </div>
         <div>
           <h1 className='text-3xl font-semibold text-teal-700 mb-4'>
             {project.title}
           </h1>
-          <p className='text-gray-700 text-sm mb-4'>
+          <p className='text-orange-400 text-sm mb-4 uppercase font-medium'>
             {new Date(project.date).toLocaleDateString()} | { project.category }
+          </p>
+          <p className='text-gray-700 mb-6'>
+            {project.description}
           </p>
         </div>
       </div>
