@@ -35,11 +35,18 @@ const ProjectDetailsPage = (
         Back to Projects
       </Link>
       <div className='grid gap-8 md:grid-cols-2 '>
-        <img
-          src={project.image}
-          alt={project.title}
-          className='w-full rounded-md shadow-md'
-        />
+        <div>
+          <img
+            src={project.image}
+            alt={project.title}
+            className='w-full rounded-md shadow-md'
+          />
+        </div>
+        <div>
+          <h1 className='text-3xl font-semibold text-teal-700 mb-4'>
+            {project.title}
+          </h1>
+        </div>
       </div>
     </>
   )
