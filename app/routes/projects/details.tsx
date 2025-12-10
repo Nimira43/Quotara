@@ -46,6 +46,9 @@ const ProjectDetailsPage = (
           <h1 className='text-3xl font-semibold text-teal-700 mb-4'>
             {project.title}
           </h1>
+          <p className='text-gray-700 text-sm mb-4'>
+            {new Date(project.date).toLocaleDateString()} | { project.category }
+          </p>
         </div>
       </div>
     </>
