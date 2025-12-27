@@ -4,11 +4,11 @@ type PaginationProps = {
   onPageChange: (page: number) => void
 }
 
-const Pagination: React.FC<PaginationProps> = ({
+const Pagination = ({
   totalPages,
   currentPage,
   onPageChange
-}) => {
+}: PaginationProps) => {
   if (totalPages <= 1) return null 
 
   return ( 
