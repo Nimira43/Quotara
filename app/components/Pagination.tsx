@@ -1,3 +1,9 @@
+type PaginationProps = {
+  totalPages: number
+  currentPages: number
+  onPageChange: (page: number) => void
+}
+
 const Pagination = ({
   totalPages,
   currentPage,

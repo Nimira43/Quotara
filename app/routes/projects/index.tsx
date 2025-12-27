@@ -20,8 +20,6 @@ const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
   const indexOfFirst = indexOfLast - projectsPerPage
   const currentProjects = projects.slice(indexOfFirst, indexOfLast)
 
- 
-
   return ( 
     <>
       <h2 className='page-title'>Projects</h2>
