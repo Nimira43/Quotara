@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { Project } from '~/types'
 import type { Route } from './+types/index'
 import ProjectCard from '~/components/ProjectCard'
+import Pagination from '~/components/Pagination'
 
 export async function loader({ request }: Route.LoaderArgs): Promise<{projects: Project[]}> {
   const res = await fetch('http://localhost:8000/projects')
