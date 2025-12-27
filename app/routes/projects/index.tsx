@@ -13,6 +13,8 @@ export async function loader({ request }: Route.LoaderArgs): Promise<{projects: 
 const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
   const { projects } = loaderData as { projects: Project[] }
   const [currentPage, setCurrentPage] = useState(1)
+  const projectsPerPage = 2
+  const totalPages = Math.ceil(projects.length / projectsPerPage)
 
   return ( 
     <>
