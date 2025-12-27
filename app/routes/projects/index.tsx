@@ -31,6 +31,7 @@ const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
             }`}
           onClick={() => setCurrentPage(idx + 1)}
         >
+          { idx + 1 }
         </button>
       ))}
     </div>
