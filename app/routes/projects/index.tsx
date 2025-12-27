@@ -33,7 +33,11 @@ const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
           />
         ))}
       </div>
-      { totalPages > 1 && renderPagination()}
+      <Pagination
+        totalPages={totalPages}
+        currentPage={currentPage}
+        onPageChange={setCurrentPage}
+      />
     </>
   )
 }
