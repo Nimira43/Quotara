@@ -1,10 +1,10 @@
 type PaginationProps = {
   totalPages: number
-  currentPages: number
+  currentPage: number
   onPageChange: (page: number) => void
 }
 
-const Pagination = ({
+const Pagination: React.FC<PaginationProps> = ({
   totalPages,
   currentPage,
   onPageChange
