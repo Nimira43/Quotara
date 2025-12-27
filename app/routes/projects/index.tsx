@@ -19,6 +19,12 @@ const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
   const indexOfFirst = indexOfLast - projectsPerPage
   const currentProjects = projects.slice(indexOfFirst, indexOfLast)
 
+  const renderPagination = () => (
+    <div className='flex justify-center gap-2 mt-8'>
+      
+    </div>
+  )
+
   return ( 
     <>
       <h2 className='page-title'>Projects</h2>
