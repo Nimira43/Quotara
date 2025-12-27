@@ -15,7 +15,7 @@ const Pagination = ({
             ? 'text-white border-2 border-orange-400 bg-orange-400'
             : 'text-orange-400 border-2 border-orange-400 bg-transparent'
             }`}
-          onClick={() => setCurrentPage(idx + 1)}
+          onClick={() => onPageChange(idx + 1)}
         >
           { idx + 1 }
         </button>
