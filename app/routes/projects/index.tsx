@@ -48,6 +48,7 @@ const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
           />
         ))}
       </div>
+      { totalPages > 1 && renderPagination()}
     </>
   )
 }
