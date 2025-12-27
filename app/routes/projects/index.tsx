@@ -23,7 +23,7 @@ const ProjectsPage = ({ loaderData}: Route.ComponentProps) => {
     <>
       <h2 className='page-title'>Projects</h2>
       <div className='grid gap-6 sm:grid-cols-2'>
-        {projects.map((project) => (
+        {currentProjects.map((project) => (
           <ProjectCard 
             key={project.id}
             project={project}
