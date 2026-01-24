@@ -1,4 +1,12 @@
 import { Outlet } from 'react-router'
+import type { Route } from '../home/+types'
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: 'Quotara | Home' },
+    { name: 'description', content: 'Welcome to Quotara.' },
+  ]
+}
 
 const MainLayout = () => {
   return ( 
