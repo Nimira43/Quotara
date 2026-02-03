@@ -13,13 +13,17 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export async function loader({ request }: Route.LoaderArgs): Promise<{projects: Project[]}> {
-  const res = await fetch('http://localhost:8000/projects')
+  const res = await fetch(
+    `${import.meta.env.VITE_API_URL}/projects`
+  )
   const data = await res.json()
 
   return {projects: data}
 }
 
-const ProjectsPage = ({ loaderData }: Route.ComponentProps) => {
+const ProjectsPage = (
+  { loaderData }: Route.ComponentProps
+) => {
   const [selectedCategory, setSelectedCategory] = useState('All')
   const [currentPage, setCurrentPage] = useState(1)
   const projectsPerPage = 4
@@ -28,11 +32,14 @@ const ProjectsPage = ({ loaderData }: Route.ComponentProps) => {
     projects: Project[]
   }
   
-  const categories = ['All', ...new Set(
-    projects.map(
-      (project) => project.category
+  const categories = [
+    'All',
+    ...new Set(
+      projects.map(
+        (project) => project.category
+      )
     )
-  )]
+  ]
 
   const filteredProjects = selectedCategory === 'All'
     ? projects 
