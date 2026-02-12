@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router'
-import { BsChatSquareQuote } from 'react-icons/bs'
+import { BiCodeAlt } from 'react-icons/bi'
 import { LiaTimesSolid, LiaBarsSolid } from 'react-icons/lia'
 
 const Navbar = () => {
@@ -15,8 +15,8 @@ const Navbar = () => {
           to='/'
           className='flex items-center gap-2 text-white text-3xl'
         >
-          <BsChatSquareQuote className='text-orange-400' />
-          <span className='logo pb-1'>Quotara</span>
+          <BiCodeAlt className='text-orange-400' />
+          <span className='logo pb-0.5'>Quotara</span>
         </NavLink>
         <div className='hidden md:flex items-center gap-6'>
           <div className='space-x-4 text-sm text-white uppercase font-medium'>
