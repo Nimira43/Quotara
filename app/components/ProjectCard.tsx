@@ -8,24 +8,30 @@ const ProjectCard = ({ project }: {project: Project}) => {
       to={`/projects/${project.id}`}
     >
       <div 
-        className='bg-teal-50 border border-orange-400 rounded-md overflow-hidden shadow-sm transitioning hover:shadow-md'
+        className='bg-teal-50 border border-orange-400 rounded-md overflow-hidden shadow-sm transitioning hover:shadow-md h-full flex flex-col'
       >
         <img 
           src={project.image} 
           alt={project.title} 
           className='w-full h-40 object-cover'
         />
-        <div className='p-5'>
-          <h3 className='text-3xl font-medium text-teal-700 mb-1'>{project.title}</h3>
-          <p className='text-sm text-gray-700 mb-2'>
+
+        <div className='p-5 flex flex-col flex-1'>
+          <h3 className='text-3xl font-medium text-teal-700 mb-1'>
+            {project.title}
+          </h3>
+
+          <p className='text-sm text-gray-700 mb-2 flex-1'>
             {project.description}
           </p>
-          <div className='flex justify-between items-center text-sm text-orange-400 font-semibold uppercase'>
+
+          <div className='flex justify-between items-center text-sm text-orange-400 font-semibold uppercase mt-auto'>
             <span>{project.category}</span>
             <span>{new Date(project.date).toLocaleDateString()}</span>
           </div>
         </div>
       </div>
+
     </Link>
   )
 }

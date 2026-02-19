@@ -1,6 +1,7 @@
 import FeaturedProjects from '~/components/FeaturedProjects'
 import type { Route } from './+types/index' 
 import type { Project } from '~/types'
+import Creators from '~/components/Creators'
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -32,7 +33,8 @@ const HomePage = (
       <FeaturedProjects
         projects={projects}
         count={2}
-      />     
+      />
+      <Creators />
     </>
   )
 }

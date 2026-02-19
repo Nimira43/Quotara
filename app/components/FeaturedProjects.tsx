@@ -15,7 +15,7 @@ const FeaturedProjects = (
   
   return (  
     <section>
-      <h2 className='text-2xl font-medium mb-6 text-gray-900'>Featured Projects</h2>
+      <h2 className='text-4xl font-medium mb-6 text-gray-900 text-center'>Featured Projects</h2>
       <div className='grid gap-6 sm:grid-cols-2'>
         {featured
           .map((project) => (
