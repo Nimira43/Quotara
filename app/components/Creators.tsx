@@ -1,6 +1,6 @@
-import { BiCodeAlt } from "react-icons/bi"
-import { GoImage } from "react-icons/go"
-import { PiShapes } from "react-icons/pi"
+import { BiCodeAlt } from 'react-icons/bi'
+import { GoImage } from 'react-icons/go'
+import { PiShapes } from 'react-icons/pi'
 
 const Preview = () => {
   return (  
@@ -22,7 +22,7 @@ const Preview = () => {
       <BiCodeAlt />
     </div>
     <h3 className='font-semibold text-gray-900 mb-2'>Experiment</h3>
-    <p className='text-gray-600 text-sm'>
+    <p className='text-gray-700 text-sm'>
       Try new stacks, test ideas, and learn by building — no pressure, no expectations.
     </p>
   </div>
@@ -32,7 +32,7 @@ const Preview = () => {
       <PiShapes />
     </div>
     <h3 className='font-semibold text-gray-900 mb-2'>Build</h3>
-    <p className='text-gray-600 text-sm'>
+    <p className='text-gray-700 text-sm'>
       Turn concepts into real projects and grow your skills with every iteration.
     </p>
   </div>
@@ -42,7 +42,7 @@ const Preview = () => {
       <GoImage />
     </div>
     <h3 className='font-semibold text-gray-900 mb-2'>Share</h3>
-    <p className='text-gray-600 text-sm'>
+    <p className='text-gray-700 text-sm'>
       Publish your work, inspire others, and connect with people who appreciate the journey.
     </p>
   </div>

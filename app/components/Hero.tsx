@@ -16,7 +16,7 @@ const Hero = () => {
         </Link>
         <Link 
           to='/contact'
-          className=' outline-btn transitioning'  
+          className='outline-btn transitioning'  
         >
           Contact Us
         </Link>
