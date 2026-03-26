@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "slug": "api-authentication",
+    "title": "API authentication",
+    "excerpt": "API authentication is basically the bouncer of your backend",
+    "date": "2026-02-26T00:00:00"
+  },
+  {
+    "id": "2",
+    "slug": "css-utility-vs-component",
+    "title": "Utility-First vs Component-Based CSS",
+    "excerpt": "Utility-first CSS is what happens when someone looks at traditional styling and says, \"You know what? I'm tired.\"",
+    "date": "2026-03-09T00:00:00"
+  },
+  {
+    "id": "3",
+    "slug": "react-hooks-overview",
+    "title": "React Hooks Overview",
+    "excerpt": "React Hooks arrived in 16.8 like a superhero bursting through a wall shouting...",
+    "date": "2025-12-18T00:00:00"
+  },
+  {
+    "id": "4",
+    "slug": "writing-clean-code",
+    "title": "Writing Clean Code",
+    "excerpt": "Write code your future self won't want to fight in a car park.",
+    "date": "2026-02-15T00:00:00"
+  },
+  {
+    "id": "5",
+    "slug": "deploying-fullstack-apps",
+    "title": "Deploying A Full-Stack App",
+    "excerpt": "Deploying a full-stack app is simple. All you need to do is...",
+    "date": "2025-01-28T00:00:00"
+  },
+  {
+    "id": "6",
+    "slug": "dev-world-news",
+    "title": "ORMs: Humanity's Greatest Invention",
+    "excerpt": "Object-Relational Mappers (ORMs) promise to make database queries easier. ",
+    "date": "2025-02-23T00:00:00"
+  },
+  {
+    "id": "7",
+    "slug": "slugifylite-review",
+    "title": "Slugify Lite — A Tiny NPM Package That Just Works",
+    "excerpt": "Every week we get submissions that try to reinvent the wheel.",
+    "date": "2026-03-23T00:00:00"
+  },
+  {
+    "id": "8",
+    "slug": "tabula-preview",
+    "title": "The Note-Taking App That Refuses to Behave",
+    "excerpt": "Every dev builds a note-taking app at some point. But this one?",
+    "date": "2026-01-05T00:00:00"
+  }
+]

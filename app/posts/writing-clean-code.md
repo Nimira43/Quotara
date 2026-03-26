@@ -1,4 +1,4 @@
-# Clean Code: Or, “Please Stop Writing Whatever That Was”
+# Writing Clean Code
 
 Clean code is simple:  
 Write code your future self won’t want to fight in a car park.

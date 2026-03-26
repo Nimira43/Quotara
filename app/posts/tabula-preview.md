@@ -1,4 +1,4 @@
-# Project Preview: “Tabula” — The Note‑Taking App That Refuses to Behave
+# The Note‑Taking App That Refuses to Behave
 
 Every dev builds a note‑taking app at some point.  
 But this one?  

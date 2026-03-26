@@ -1,4 +1,4 @@
-# React Hooks: Because Classes Were Making Everyone Cry
+# React Hooks Overview
 
 React Hooks arrived in 16.8 like a superhero bursting through a wall shouting,  
 “STOP WRITING CLASS COMPONENTS, YOU FOOLS!”

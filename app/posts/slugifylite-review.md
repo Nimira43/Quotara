@@ -1,9 +1,9 @@
-# Project Review: `slugify-lite` — A Tiny NPM Package That Just Works
+# Slugify Lite — A Tiny NPM Package That Just Works
 
 Every week we get submissions that try to reinvent the wheel.  
 This week, we got a wheel that actually rolls.
 
-`slugify-lite` is a tiny NPM utility from a brand‑new developer,  
+Slugify Lite is a tiny NPM utility from a brand‑new developer,  
 and it does exactly one thing:
 
 **It turns text into URL‑friendly slugs.**

@@ -1,4 +1,4 @@
-# CSS - Utility First V Component Based
+# Utility First Vs Component Based CSS
 
 ## Utility‑First CSS: Tailwind and the Art of Writing CSS Without Writing CSS
 
