@@ -16,7 +16,9 @@ const Navbar = () => {
           className='flex items-center gap-2 text-white text-3xl'
         >
           <BiCodeAlt className='text-orange-400' />
-          <span className='logo pb-0.5'>Quotara</span>
+          <span className='logo pb-0.5'>
+            Quotara
+          </span>
         </NavLink>
         <div className='hidden md:flex items-center gap-6'>
           <div className='space-x-4 text-sm text-white uppercase font-medium'>

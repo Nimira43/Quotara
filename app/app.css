@@ -11,7 +11,7 @@
 }
 
 .page-title {
-  @apply text-3xl font-medium text-gray-900 mb-2;
+  @apply text-3xl font-medium mb-4 text-center text-teal-700;
 }
 
 .transitioning {
