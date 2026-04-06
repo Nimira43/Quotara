@@ -1,4 +1,4 @@
-# API Authentication"
+# API Authentication
 
 API authentication is basically the bouncer of your backend.  
 Without it, anyone with a pulse (or a botnet) can wander in, poke your database, and leave with your dignity.

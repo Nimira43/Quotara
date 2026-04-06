@@ -57,7 +57,7 @@ const ProjectDetailsPage = (
           <a
             href={project.url}
             target='_blank'
-            className='inline-block text-white bg-teal-700 hover:bg-orange-400 transitioning px-6 py-2 rounded'
+            className='inline-block uppercase text-white bg-teal-700 hover:bg-orange-400 transitioning px-6 py-2 rounded'
           >
             View Project
           </a>
