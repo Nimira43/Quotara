@@ -36,13 +36,10 @@ const BlogPostDetailsPage = (
   const { postMeta, markdown } = loaderData
   return (  
     <div className='max-w-3xl mx-auto px-6 py-12 bg-teal-50'>
-      <h1 className='text-3xl font-medium text-teal-700 mb-2'>
-        {postMeta.title}
-      </h1>
       <p className='text-sm text-orange-400 font-semibold uppercase mb-6'>
         {new Date(postMeta.date).toLocaleDateString()}
       </p>
-      <div className='max-w-none mb-12'>
+      <div className='prose max-w-none mb-12'>
         <ReactMarkdown>
           {markdown}
         </ReactMarkdown>

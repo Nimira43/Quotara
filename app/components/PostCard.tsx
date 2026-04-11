@@ -7,7 +7,7 @@ const PostCard = ({
   post: PostMeta
 }) => {
   return (  
-    <article className='p-6 rounded-md shadow-md border border-orange-400 mb-4'>
+    <article className='p-6 rounded-md shadow-md border border-orange-400 mb-4 bg-teal-50'>
       <h3 className='text-2xl font-medium text-teal-700'>
         {post.title}
       </h3>

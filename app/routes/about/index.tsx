@@ -24,7 +24,7 @@ const AboutPage = () => {
         <h2 className='text-2xl font-medium text-teal-700'>
           Tools & Technologies We Support
         </h2>
-        <p className='text-teal-700 leading-relaxed border border-teal-700 px-6 py-6 rounded-md shadow-md bg-teal-50'>
+        <p className='text-teal-700 leading-relaxed border border-orange-400 px-6 py-6 rounded-md shadow-md bg-teal-50'>
           Quotara embraces a wide range of modern technologies, from frameworks like Next.js, Vue, and Laravel to tools such as Prisma, Docker, Appwrite, MongoDB, and PostgreSQL. We want creators to feel free to experiment with whatever stack inspires them, without limitations or expectations.
         </p>
       </section>

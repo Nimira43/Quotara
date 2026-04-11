@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+@plugin '@tailwindcss/typography';
+
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -11,7 +13,7 @@
 }
 
 .page-title {
-  @apply text-3xl font-medium mb-4 text-center text-teal-700;
+  @apply text-4xl font-medium mb-4 text-center text-teal-700;
 }
 
 .transitioning {
