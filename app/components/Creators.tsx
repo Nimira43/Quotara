@@ -1,11 +1,12 @@
 import { BiCodeAlt } from 'react-icons/bi'
 import { GoImage } from 'react-icons/go'
 import { PiShapes } from 'react-icons/pi'
+import CreatorsCard from './CreatorsCard'
 
-const Preview = () => {
-  return (  
-    <section className='mt-12 p-10 flex flex-col md:flex-row items-center gap-8 bg-teal-50 border border-orange-400 rounded-md shadow-lg'>
-
+const Creators = () => {
+  return (
+    <section className='mt-12 p-10 flex flex-col md:flex-row items-center gap-8'>
+      
       <div className='flex-1 space-y-4 text-center md:text-left'>
         <h2 className='text-3xl font-semibold text-gray-900'>
           How Creators Build on Quotara
@@ -16,41 +17,28 @@ const Preview = () => {
       </div>
 
       <div className='flex-1 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center'>
+        <CreatorsCard
+          icon={<BiCodeAlt />}
+          title='Experiment'
+          description='Try new stacks, test ideas, and learn by building — no pressure, no expectations.'
+        />
 
-  <div className='bg-white p-6 rounded-xl shadow-md flex flex-col items-center border border-orange-400'>
-    <div className='text-4xl text-orange-400 mb-3 flex items-center justify-center'>
-      <BiCodeAlt />
-    </div>
-    <h3 className='font-semibold text-gray-900 mb-2'>Experiment</h3>
-    <p className='text-gray-700 text-sm'>
-      Try new stacks, test ideas, and learn by building — no pressure, no expectations.
-    </p>
-  </div>
+        <CreatorsCard
+          icon={<PiShapes />}
+          title='Build'
+          description='Turn concepts into real projects and grow your skills with every iteration.'
+        />
 
-  <div className='bg-white p-6 rounded-xl shadow-md flex flex-col items-center border border-orange-400'>
-    <div className='text-4xl text-orange-400 mb-3 flex items-center justify-center'>
-      <PiShapes />
-    </div>
-    <h3 className='font-semibold text-gray-900 mb-2'>Build</h3>
-    <p className='text-gray-700 text-sm'>
-      Turn concepts into real projects and grow your skills with every iteration.
-    </p>
-  </div>
-
-  <div className='bg-white p-6 rounded-xl shadow-md flex flex-col items-center border border-orange-400'>
-    <div className='text-4xl text-orange-400 mb-3 flex items-center justify-center'>
-      <GoImage />
-    </div>
-    <h3 className='font-semibold text-gray-900 mb-2'>Share</h3>
-    <p className='text-gray-700 text-sm'>
-      Publish your work, inspire others, and connect with people who appreciate the journey.
-    </p>
-  </div>
-
-</div>
+        <CreatorsCard
+          icon={<GoImage />}
+          title='Share'
+          description='Publish your work, inspire others, and connect with people who appreciate the journey.'
+        />
+      </div>
 
     </section>
   )
 }
 
-export default Preview
+export default Creators
+

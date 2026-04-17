@@ -8,7 +8,7 @@ const ProjectCard = ({ project }: {project: Project}) => {
       to={`/projects/${project.id}`}
     >
       <div 
-        className='bg-teal-50 border border-orange-400 rounded-md overflow-hidden shadow-lg transitioning hover:shadow-md h-full flex flex-col'
+        className='bg-teal-50 border border-orange-400 rounded-md overflow-hidden shadow-md transitioning hover:shadow-md h-full flex flex-col'
       >
         <img 
           src={project.image} 

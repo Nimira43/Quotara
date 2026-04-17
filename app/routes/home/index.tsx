@@ -2,6 +2,8 @@ import FeaturedProjects from '~/components/FeaturedProjects'
 import type { Route } from './+types/index' 
 import type { Project } from '~/types'
 import Creators from '~/components/Creators'
+import type { PostMeta } from '~/types'
+import LatestPosts from '~/components/LatestPosts'
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -14,19 +16,30 @@ export async function loader(
   { request }: Route.LoaderArgs
 ): Promise<{
   projects: Project[]
+  posts: PostMeta[]
 }> {
-  const res = await fetch(
-    `${import.meta.env.VITE_API_URL}/projects`
-  )
-  const data = await res.json()
+  const url = new URL(request.url)
+  const [projectRes, postRes] = await Promise.all([
+    fetch(`${import.meta.env.VITE_API_URL}/projects`),
+    fetch(new URL('/posts-meta.json', url))
+  ])
 
-  return { projects: data }
+  if (!projectRes.ok || !postRes.ok) {
+    throw new Error('Failed to fetch projects or posts.')
+  }
+
+  const [projects, posts] = await Promise.all([
+    projectRes.json(),
+    postRes.json()
+  ])
+
+  return { projects, posts }
 }
 
 const HomePage = (
   { loaderData }: Route.ComponentProps
 ) => {
-  const { projects } = loaderData
+  const { projects, posts } = loaderData
 
   return (
     <>
@@ -35,6 +48,7 @@ const HomePage = (
         count={2}
       />
       <Creators />
+      <LatestPosts posts={posts} />
     </>
   )
 }

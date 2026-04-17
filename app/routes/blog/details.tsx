@@ -35,7 +35,7 @@ const BlogPostDetailsPage = (
 ) => {
   const { postMeta, markdown } = loaderData
   return (  
-    <div className='max-w-3xl mx-auto px-6 py-12 bg-teal-50'>
+    <div className='max-w-3xl mx-auto px-6 py-12 bg-teal-50 border border-orange-400 shadow-md'>
       <p className='text-sm text-orange-400 font-semibold uppercase mb-6'>
         {new Date(postMeta.date).toLocaleDateString()}
       </p>
@@ -48,7 +48,7 @@ const BlogPostDetailsPage = (
         to='/blog'
         className='inline-block uppercase text-white bg-teal-700 hover:bg-orange-400 transitioning px-6 py-2 rounded'
       >
-        Back to post
+        Back to Blog
       </Link>
     </div>
   )
